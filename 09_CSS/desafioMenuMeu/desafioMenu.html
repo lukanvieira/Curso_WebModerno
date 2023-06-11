@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Desafio Menu</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Oswald', sans-serif;
+            background-color: #ddd;
+            margin: 0;
+        }
+
+        .cabecalho {
+            background-color: #333;
+            word-spacing: 10px;
+            border-bottom: solid 5px skyblue;
+        }
+
+        .cabecalho a {
+            color: #fff;
+            font-size: 1.2em;
+            text-decoration: none;
+        }
+
+         .logo, .menu, li, .autenticacao {
+             display: inline-block;
+            }
+            
+            .menu {
+                position: absolute;
+                margin-left: 10px;
+                margin-top: 8px;
+            }
+            
+            .autenticacao {
+                float: right;
+                margin-right: 18px;
+                margin-top: 24px;
+                word-spacing: 1px;
+            }
+            
+            .autenticacao a {
+                padding: 7px 30px;
+            }
+            
+            .menu-toggle {
+                float: right;
+                margin: 18px;
+                padding: 10px;
+                background-color: #999;
+                border-radius: 25px;
+            }
+            
+        .menu a {
+            padding: 18px 20px;
+        }
+
+        .menu a:hover {
+            background-color: skyblue;
+            color: #111
+        }
+
+        .destaque {
+            border-radius: 100px;
+            background-color: tomato;
+        }
+
+        .menu-toggle:hover {
+            background-color: #777;
+        }
+
+        @media (max-width: 1070px) {
+            .autenticacao {
+                display: none
+            }
+        }
+
+        @media (max-width: 850px) {
+            .menu {
+                display: none;
+            }
+        }
+
+        @media (min-width: 850px) {
+            .menu-toggle {
+                display: none;
+            }
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <a href="#inicio">
+                <img src="http://files.cod3r.com.br/curso-web/logo.png" alt="Logo" style="max-width: 370px; 
+                max-height: 70px;" />
+            </a>
+        </div>
+        <button class="menu-toggle">
+            <i class="fa fa-lg fa-bars"></i>
+        </button>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="#inicio">Início</a>
+                </li>
+                <li>
+                    <a href="#cursos">Cursos</a>
+                </li>
+                <li>
+                    <a href="#sobre">Sobre</a>
+                </li>
+                <li>
+                    <a href="#contato">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        <aside class="autenticacao">
+            <a href="#login">Login</a>
+            <a href="#registrar" class="botao destaque">Registrar</a>
+        </aside>
+    </header>
+
+    <script>
+        // ...
+    </script>
+</body>
+
+</html>
