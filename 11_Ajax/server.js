@@ -1,5 +1,4 @@
 const bodyParser = require('body-parser')
-const bayParser = require('body-parser')
 const express = require('express')
 const app = express()
 
@@ -29,5 +28,13 @@ app.post('/upload', (req, res) => {
         res.end('Concluído com sucesso.')
     })
 })
+
+app.post('/formulario', (req, res) => {
+    res.send({
+        ...req.body,
+        id: 1
+    })
+})
+
 // app.get('/teste', (req, res) => res.send('Ok'))
 app.listen(8080, () => console.log('Executando...'))
