@@ -1,5 +1,6 @@
 const { series } = require('gulp')
 const gulp = require('gulp')
+// Foi usado o comando 'npm install --save-dev sass' no terminal
 const sass = require('gulp-sass')(require('sass'))  // Essa parte não está no curso
 const uglifycss = require('gulp-uglifycss')
 const concat = require('gulp-concat')
