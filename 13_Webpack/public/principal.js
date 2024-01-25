@@ -15,7 +15,17 @@
   \********************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("const moduloB = __webpack_require__(Object(function webpackMissingModule() { var e = new Error(\"Cannot find module 'moduloB'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }()))\r\nconsole.log(moduloB.saudacao())\n\n//# sourceURL=webpack://capitulo-webpack/./src/modulos/moduloA.js?");
+eval("const moduloB = __webpack_require__(/*! ./moduloB */ \"./src/modulos/moduloB.js\")\r\nconsole.log(moduloB.saudacao())\n\n//# sourceURL=webpack://capitulo-webpack/./src/modulos/moduloA.js?");
+
+/***/ }),
+
+/***/ "./src/modulos/moduloB.js":
+/*!********************************!*\
+  !*** ./src/modulos/moduloB.js ***!
+  \********************************/
+/***/ ((module) => {
+
+eval("module.exports = {\r\n    saudacao() { return 'Olá eu sou o Módulo B!!!' }\r\n}\n\n//# sourceURL=webpack://capitulo-webpack/./src/modulos/moduloB.js?");
 
 /***/ }),
 
