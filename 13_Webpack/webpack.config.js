@@ -13,6 +13,13 @@ module.exports = {
         filename: 'principal.js',
         path: __dirname + '/public'
     },
+    devServer: {
+        static: {
+            directory: "./public"
+        },
+        port: 9000,
+        hot: true
+    },
     // optimization: {
     //     // Não se usa mais o trecho de código abaixo
     //     // minimizer: [
