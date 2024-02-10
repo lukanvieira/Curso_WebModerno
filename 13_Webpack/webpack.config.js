@@ -52,7 +52,8 @@ module.exports = {
             ]
         }, {
             test: /\.(png|svg|jpg|gif)$/,
-            use: ['file-loader']       // O código funcionou sem esse plugin
+            type: 'asset/resource'
+            // use: ['file-loader']       // O código funcionou sem esse plugin
         }]
     }
 }
