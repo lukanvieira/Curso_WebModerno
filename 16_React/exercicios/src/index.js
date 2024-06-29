@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import Primeiro from './components/primeiro'
+import BomDia from './components/BomDia'
 
 // render foi substituído por createRoot no React 18.
-ReactDOM.render(<Primeiro/>, document.getElementById('root'))
+ReactDOM.render(<BomDia nome="Guilherme" />, document.getElementById('root'))
