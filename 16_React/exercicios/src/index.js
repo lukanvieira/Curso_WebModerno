@@ -4,6 +4,7 @@ import { createRoot } from 'react-dom/client'
 
 import BomDia from './components/BomDia'
 import Multi, { BoaNoite } from './components/Multiplos'
+import Saudacao from './components/Saudacao'
 
 const domNode = document.getElementById('root')
 const root = createRoot(domNode)
@@ -12,6 +13,7 @@ root.render(
         <BomDia nome="Guilherme" />
         <Multi.BoaTarde nome="Ana" />
         <BoaNoite nome="Bia" />
+        <Saudacao tipo="Bom dia" nome="João" />
     </div>
 )
 
