@@ -5,6 +5,7 @@ import { createRoot } from 'react-dom/client'
 import BomDia from './components/BomDia'
 import Multi, { BoaNoite } from './components/Multiplos'
 import Saudacao from './components/Saudacao'
+import Pai from './components/Pai'
 
 const domNode = document.getElementById('root')
 const root = createRoot(domNode)
@@ -14,6 +15,9 @@ root.render(
         <Multi.BoaTarde nome="Ana" />
         <BoaNoite nome="Bia" />
         <Saudacao tipo="Bom dia" nome="João" />
+        <Pai nome="Paulo" sobrenome="Silva">
+            {/* Como passo os componentes Filhos aqui? */}
+        </Pai>
     </div>
 )
 
