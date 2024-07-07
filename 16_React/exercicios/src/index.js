@@ -6,6 +6,7 @@ import BomDia from './components/BomDia'
 import Multi, { BoaNoite } from './components/Multiplos'
 import Saudacao from './components/Saudacao'
 import Pai from './components/Pai'
+import Filho from './components/Filho'
 
 const domNode = document.getElementById('root')
 const root = createRoot(domNode)
@@ -16,7 +17,9 @@ root.render(
         <BoaNoite nome="Bia" />
         <Saudacao tipo="Bom dia" nome="João" />
         <Pai nome="Paulo" sobrenome="Silva">
-            {/* Como passo os componentes Filhos aqui? */}
+            <Filho nome="Pedro" />
+            <Filho nome="Paulo" />
+            <Filho nome="Carla" />
         </Pai>
     </div>
 )
