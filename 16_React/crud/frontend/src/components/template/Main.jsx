@@ -4,7 +4,7 @@ import Header from './Header'
 
 const main = props =>
     <React.Fragment>
-        <Header />
+        <Header {...props} />
         <main className="content">
             Conteúdo
         </main>
