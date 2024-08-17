@@ -6,7 +6,6 @@ const headerProps = {
     title: 'Usuários',
     subtitle: 'Cadestro de usuários: Incluir, Listar, Alterar e Excluir!'
 }
-
 class UserCrud extends Component {
      render() {
         return (

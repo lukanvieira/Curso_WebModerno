@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const item = props =>  
-        <a href={props.link}>
+        <Link to={props.link}>
             <i className={`fa fa-${props.icon}`}></i> {props.title}
-        </a>
+        </Link>
 
 export default item
