@@ -28,10 +28,10 @@ export default function Formulario(props: FormularioProps) {
             <div className="flex justify-end mt-7">
                 <Botao
                     onClick={() => props.clienteMudou?.(new Cliente(nome, +idade, id))}
-                    color="blue" className="mr-2">
+                    className="mr-2 bg-gradient-to-r from-blue-400 to-blue-700">
                     {id ? 'Alterar' : 'Salvar'}
                 </Botao>
-                <Botao onClick={props.cancelado} color="gray">
+                <Botao onClick={props.cancelado} className="bg-gradient-to-r from-gray-400 to-gray-700">
                     Cancelar
                 </Botao>
             </div>

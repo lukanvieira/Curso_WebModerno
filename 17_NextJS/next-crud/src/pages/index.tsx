@@ -54,7 +54,8 @@ export default function Home() {
         {visivel === 'tabela' ? (
           <>
             <div className="flex justify-end">
-              <Botao color="green" className="mb-4" onClick={novoCliente}>
+              <Botao className="mb-4 bg-gradient-to-r from-green-400 to-green-700"
+                onClick={novoCliente}>
                 Novo Cliente
               </Botao>
             </div>

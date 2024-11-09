@@ -6,7 +6,7 @@ interface botaoProps {
 }
 
 export default function Botao(props: botaoProps) {
-    const cor = `bg-gradient-to-r from-${props.color}-400 to-${props.color}-700`
+    const cor = `bg-gradient-to-r from-${props.color}-400 to-${props.color}-700` // não fez a leitura
 
     return (
         <button onClick={props.onClick} className={`
