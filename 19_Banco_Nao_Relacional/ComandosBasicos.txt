@@ -1,0 +1,8 @@
+ -- Mongo --
+ -- Comandos para usar no terminal --
+
+show dbs
+use <nome do banco>
+show collections
+db.createCollection('<Nome>')
+db.<nome da colecao>.drop()
